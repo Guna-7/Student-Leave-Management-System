@@ -30,7 +30,7 @@ It provides **separate login access** for Students, Staff, and Admin to ensure s
 
 - **Frontend**: HTML, CSS, JavaScript  
 - **Backend**: PHP  
-- **Database**: MySQL  
+- **Database**: SQL  
 
 ---
 
