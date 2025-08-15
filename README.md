@@ -43,3 +43,49 @@ Student-Leave-Management-System/
 ├── php/          # PHP backend scripts
 ├── sql/          # Database schema
 └── index.php     # Main entry point
+⚙️ Installation & Setup
+
+Clone the repository
+
+git clone https://github.com/Guna-7/Student-Leave-Management-System.git
+
+
+Move to project folder
+
+cd Student-Leave-Management-System
+
+
+Set up database
+
+Import the provided .sql file into your MySQL database.
+
+Update database credentials in config.php or relevant file.
+
+Run on Localhost
+
+Place the project folder inside your XAMPP htdocs directory.
+
+Start Apache and MySQL in XAMPP.
+
+Access the app via:
+
+http://localhost/Student-Leave-Management-System
+
+📸 Screenshots
+
+(Add relevant screenshots here)
+
+🚀 Future Enhancements
+
+Email notifications for approvals/rejections.
+
+Advanced analytics and reporting.
+
+Mobile-friendly UI.
+
+
+📧 Contact
+
+For queries or collaboration:
+Guna Dhanasekaran
+GitHub | LinkedIn
