@@ -1,0 +1,42 @@
+*
+{
+  padding: 0;
+  margin: 0;
+}
+body
+{
+  background-image: url(login.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+h4 {
+color: rgb(0, 20, 152)!important;
+}
+
+nav .navbar{
+  background:#17bbd7!important;
+}
+
+nav .nav-item{
+	padding:0 4px!important;
+}
+
+nav a.nav-link{
+  font-size:16px!important;
+}
+
+nav a.nav-link:hover{
+  color:#9d9595!important;
+  transition:0.5s;
+}
+
+nav a.nav-item:hover{
+  background:#826e00!important;
+  padding:0 4px!important;
+  transition:0.5s;
+}
+
+.btn{
+	background:#00ff44!important;
+}

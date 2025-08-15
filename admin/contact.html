@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #7f7c7c;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        table {
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 60%;
+            margin: 20px auto;
+            background-color: #8d7679; /* Light red background color */
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h2>Contact us</h2>
+
+    <table id="dynamic-table">
+        <thead>
+            <tr>
+                <th>SNo</th>
+                <th>Name</th>
+                <th>Contact No</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table content will be added here dynamically -->
+        </tbody>
+    </table>
+
+    <script>
+        // Sample data
+        var data = [
+            { sno: 1, name: 'Dr.M.lilly florence', contact: '1234567890', email: 'john@example.com' },
+            { sno: 2, name: 'mrs.sadhana ', contact: '9876543210', email: 'jane@example.com' },
+            { sno: 2, name: 'mrs.sudha', contact: '9876543210', email: 'jane@example.com' },
+            { sno: 3, name: 'mrs.moratanch', contact: '9876543210', email: 'jane@example.com' },
+            { sno: 4, name: 'mrs.lavanya', contact: '9876543210', email: 'jane@example.com' },
+            { sno: 5, name: 'mrs.Indhulrkha', contact: '9876543210', email: 'jane@example.com' },
+            { sno: 6, name: 'mrs.veera dhanya', contact: '9876543210', email: 'jane@example.com' },
+            { sno: 7, name: 'mrs.kalaivani', contact: '9876543210', email: 'jane@example.com' },
+            { sno: 8, name: 'mr.vinoth kumar', contact: '9876543210', email: 'jane@example.com' },
+            { sno: 9, name: 'mr.Harish ', contact: '9876543210', email: 'jane@example.com' },
+            { sno: 10, name: 'mrs.gomma', contact: '9876543210', email: 'jane@example.com' },
+            { sno: 11, name: 'mrs.sathya priya', contact: '9876543210', email: 'jane@example.com' },
+            { sno: 12, name: 'mrs.malathi', contact: '9876543210', email: 'jane@example.com' },
+            { sno: 13, name: 'mrs.jayakumari', contact: '9876543210', email: 'jane@example.com' },
+            { sno: 14, name: 'mrs.kasthuri', contact: '9876543210', email: 'jane@example.com' },
+            { sno: 15, name: 'mr.gopi', contact: '9876543210', email: 'jane@example.com' },
+            { sno: 16, name: 'mr.vikram', contact: '9876543210', email: 'jane@example.com' }
+            // Add more data as needed
+        ];
+
+        // Function to populate the table with data
+        function populateTable(data) {
+            var tableBody = document.getElementById('dynamic-table').getElementsByTagName('tbody')[0];
+
+            // Clear existing rows
+            tableBody.innerHTML = '';
+
+            // Add new rows
+            data.forEach(function (row) {
+                var newRow = tableBody.insertRow(tableBody.rows.length);
+                var cellSno = newRow.insertCell(0);
+                var cellName = newRow.insertCell(1);
+                var cellContact = newRow.insertCell(2);
+                var cellEmail = newRow.insertCell(3);
+
+                cellSno.innerHTML = row.sno;
+                cellName.innerHTML = row.name;
+                cellContact.innerHTML = row.contact;
+                cellEmail.innerHTML = row.email;
+            });
+        }
+
+        // Initial population of the table
+        populateTable(data);
+    </script>
+</body>
+</html>
